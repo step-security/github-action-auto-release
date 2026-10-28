@@ -191,7 +191,7 @@ runs:
           return false;
 
     # Drafts the next Release and compiles the notes as Pull Requests are merged into "main" (unless the `no-release` label is used on the PR)
-    - uses: step-security/release-drafter@v7
+    - uses: step-security/release-drafter@641fda6024a7b071f83dbe2f854eec5d862336b9 # v7.1.0
       name: Draft release
       id: release
       if: steps.has-duplicate.outputs.result == 'false'
